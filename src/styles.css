@@ -1,1 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: #c2e59c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: Comic Sans MS;
+  color: mediumblue;
+}
+
+.card {
+  border: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  border-radius: 8px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 49%);
+}
+
+.card.search-bar {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.bg-search {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.custom-file-control,
+.form-control,
+.is-focused .custom-file-control,
+.is-focused .form-control {
+  background-image: none;
+}
+
+#thermometer {
+  animation: thermometer 3s ease infinite alternate;
+}
+
+@keyframes thermometer {
+  0% {
+    fill: white;
+    transform: rotateZ(0deg);
+  }
+  50% {
+    fill: rgb(20, 136, 231);
+  }
+  100% {
+    transform: rotateZ(30deg);
+    fill: red;
+  }
+}
+#barometer {
+  animation: barometer 3s ease infinite alternate;
+}
+
+@keyframes barometer {
+  0% {
+    fill: white;
+    transform: rotateZ(0deg);
+  }
+  50% {
+    fill: rgb(20, 136, 231);
+  }
+  100% {
+    transform: rotateZ(30deg);
+    fill: red;
+  }
+}
+
+#humidity {
+  animation: humidity 3s ease infinite alternate;
+}
+
+@keyframes humidity {
+  0% {
+    fill: white;
+    transform: rotateZ(0deg);
+  }
+  50% {
+    fill: rgb(20, 136, 231);
+  }
+  100% {
+    transform: rotateZ(30deg);
+    fill: red;
+  }
+}
+
+#wind {
+  animation: wind 3s ease infinite alternate;
+}
+
+@keyframes wind {
+  0% {
+    fill: white;
+    transform: rotateZ(0deg);
+  }
+  50% {
+    fill: rgb(20, 136, 231);
+  }
+  100% {
+    transform: rotateZ(30deg);
+    fill: red;
+  }
+}
+
+#rain_drop {
+  animation: rain_drop 3s ease-in-out infinite;
+  position: absolute;
+}
+
+@keyframes rain_drop {
+  0% {
+    top:0px;
+    opacity: 1;
+    fill: red;
+  }
+  /* 10% {
+    top:30px;
+    opacity: 1;
+    fill: red;
+  }
+  20% {
+    top:50px;
+    opacity: 1;
+    fill: red;
+  } */
+  100% {
+    opacity: 0;
+    top: 500px;
+  }
+}

@@ -1,9 +1,13 @@
+import { TemperatureUnit } from './../app/types';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
+const temperatureUnit:TemperatureUnit="metric";
 export const environment = {
-  production: false
+  production: false,
+  baseURL:"https://api.openweathermap.org/data/2.5",
+  APIKey:"612fc5ea0db871f70f6abb1257be00de",
+  temperatureUnit
 };
 
 /*
